@@ -28,7 +28,7 @@ class EmbeddingStore:
         self._next_index = 0
 
         try:
-            import chromadb  # noqa: F401
+            import chromadb  # type: ignore # noqa: F401
 
             # TODO: initialize chromadb client + collection
             self._use_chroma = True

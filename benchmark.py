@@ -1,7 +1,5 @@
 from __future__ import annotations
 
-import re
-from collections import Counter
 from pathlib import Path
 import os
 
@@ -9,7 +7,7 @@ from src.chunking import compute_similarity
 from src.chunking import FixedSizeChunker, SentenceChunker, RecursiveChunker
 from src.store import EmbeddingStore
 from src.models import Document
-from src.embeddings import LocalEmbedder, OpenAIEmbedder, OPENAI_EMBEDDING_MODEL
+from src.embeddings import OpenAIEmbedder, OPENAI_EMBEDDING_MODEL
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -156,7 +154,6 @@ def main() -> None:
     print(f"[store] Đã index {store.get_collection_size()} chunks\n")
 
     total_sem_hits = 0
-    query_sem_avgs: list[float] = []
 
     for i, item in enumerate(BENCHMARK, 1):
         query    = item["query"]
@@ -168,7 +165,7 @@ def main() -> None:
         results    = store.search(query, top_k=3)
         sem_scores: list[float] = []
 
-        for rank, r in enumerate(results, 1):
+        for _, r in enumerate(results, 1):
             content = r.get("content", "")
             source  = r.get("metadata", {}).get("source", "?")
             sim    = semantic_score(gold, content)

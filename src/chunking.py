@@ -48,7 +48,7 @@ class SentenceChunker:
 
     def chunk(self, text: str) -> list[str]:
         # TODO: split into sentences, group into chunks
-        sentences = re.split(r'[.!?]+', text)
+        sentences = re.findall(r'[^.!?]+[.!?]?', text)
         sentences = [s.strip() for s in sentences if s.strip()]
         chunks = []
         for i in range(0, len(sentences), self.max_sentences_per_chunk):

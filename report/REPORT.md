@@ -1,8 +1,8 @@
 # Báo Cáo Lab 7: Embedding & Vector Store
 
-**Họ tên:** [Tên sinh viên]
-**Nhóm:** [Tên nhóm]
-**Ngày:** [Ngày nộp]
+**Họ tên:** Lê Kim Dũng
+**Nhóm:** 04-E403
+**Ngày:** 10/4/2026
 
 ---
 
@@ -11,29 +11,29 @@
 ### Cosine Similarity (Ex 1.1)
 
 **High cosine similarity nghĩa là gì?**
-> *Viết 1-2 câu:*
+> *Viết 1-2 câu:* Hai vector “gần giống nhau” về hướng → nội dung của chúng giống nhau về mặt ngữ nghĩa (hoặc từ vựng, tùy embedding).
 
 **Ví dụ HIGH similarity:**
-- Sentence A:
-- Sentence B:
-- Tại sao tương đồng:
+- Sentence A: "Người lái xe có nồng độ cồn vượt mức sẽ bị phạt tiền."
+- Sentence B: "Tài xế vi phạm nồng độ cồn có thể bị xử phạt bằng tiền."
+- Tại sao tương đồng: Cùng nói về vi phạm nồng độ cồn khi lái xe, cùng ý bị phạt tiền
 
 **Ví dụ LOW similarity:**
-- Sentence A:
-- Sentence B:
-- Tại sao khác:
+- Sentence A: "Người lái xe có nồng độ cồn vượt mức sẽ bị phạt tiền."
+- Sentence B: "Thủ tục khởi kiện dân sự tại tòa án gồm nhiều bước."
+- Tại sao khác: Sentence A: nói về giao thông / vi phạm nồng độ cồn. Sentence B: nói về pháp lý / thủ tục tòa án. Hai câu không chung chủ đề, không chung từ khóa quan trọng.
 
 **Tại sao cosine similarity được ưu tiên hơn Euclidean distance cho text embeddings?**
-> *Viết 1-2 câu:*
+> *Viết 1-2 câu:* Cosine similarity đo “hướng”, Euclidean distance đo “khoảng cách tuyệt đối”. Trong text embeddings, ý nghĩa câu nằm ở hướng vector, không phải độ dài vector.
 
 ### Chunking Math (Ex 1.2)
 
 **Document 10,000 ký tự, chunk_size=500, overlap=50. Bao nhiêu chunks?**
-> *Trình bày phép tính:*
-> *Đáp án:*
+> *Trình bày phép tính:* $num\_chunks = \left\lceil \frac{N - chunk\_size}{chunk\_size - overlap} \right\rceil + 1$
+> *Đáp án:* 23
 
 **Nếu overlap tăng lên 100, chunk count thay đổi thế nào? Tại sao muốn overlap nhiều hơn?**
-> *Viết 1-2 câu:*
+> *Viết 1-2 câu:* Chunks tăng: 23 → 25. Muốn overlap nhiều hơn vì: tránh mất ngữ cảnh ở “biên chunk”, tăng khả năng retrieve đúng (recall ↑), tốt hơn cho semantic embedding.
 
 ---
 
@@ -41,16 +41,16 @@
 
 ### Domain & Lý Do Chọn
 
-**Domain:** [ví dụ: Customer support FAQ, Vietnamese law, cooking recipes, ...]
+**Domain:** Pháp luật
 
 **Tại sao nhóm chọn domain này?**
-> *Viết 2-3 câu:*
+> *Viết 2-3 câu:* Lĩnh vực pháp luật có khối lượng tài liệu lớn, nhiều quy định phức tạp và thường xuyên được người dùng tra cứu. Các câu hỏi trong domain này thường mang tính lặp lại và có cấu trúc rõ ràng, rất phù hợp để áp dụng hệ thống RAG nhằm hỗ trợ truy xuất thông tin nhanh và chính xác.
 
 ### Data Inventory
 
 | # | Tên tài liệu | Nguồn | Số ký tự | Metadata đã gán |
 |---|--------------|-------|----------|-----------------|
-| 1 | | | | |
+| 1 | data/phapluat/01_pháp_luật.md| https://vnexpress.net/phap-luat| 4241| doc_id, source |
 | 2 | | | | |
 | 3 | | | | |
 | 4 | | | | |
@@ -60,7 +60,7 @@
 
 | Trường metadata | Kiểu | Ví dụ giá trị | Tại sao hữu ích cho retrieval? |
 |----------------|------|---------------|-------------------------------|
-| | | | |
+| doc_id| integer | 1 | Giúp xác định chunk thuộc về tài liệu nào, từ đó có thể group các chunk liên quan, tránh trả về nhiều đoạn trùng lặp từ cùng một nguồn và hỗ trợ truy vết (traceability) về tài liệu gốc khi hiển thị kết quả cho người dùng.|
 | | | | |
 
 ---
@@ -73,7 +73,7 @@ Chạy `ChunkingStrategyComparator().compare()` trên 2-3 tài liệu:
 
 | Tài liệu | Strategy | Chunk Count | Avg Length | Preserves Context? |
 |-----------|----------|-------------|------------|-------------------|
-| | FixedSizeChunker (`fixed_size`) | | | |
+| data/phapluat/01_pháp_luật.md | FixedSizeChunker (`fixed_size`) | | | |
 | | SentenceChunker (`by_sentences`) | | | |
 | | RecursiveChunker (`recursive`) | | | |
 

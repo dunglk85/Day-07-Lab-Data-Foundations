@@ -31,8 +31,8 @@ class EmbeddingStore:
             import chromadb  # noqa: F401
 
             # TODO: initialize chromadb client + collection
-
             self._use_chroma = True
+            self._collection = chromadb.Client().get_or_create_collection(name=self._collection_name)
         except Exception:
             self._use_chroma = False
             self._collection = None

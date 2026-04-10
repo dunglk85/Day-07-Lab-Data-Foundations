@@ -1,12 +1,3 @@
-"""
-Phase 2 — Benchmark Script (dùng compute_similarity để đánh giá)
-Chạy: python benchmark.py
-
-Hai cách đánh giá song song:
-  - is_hit()         : keyword check (nhanh, dễ hiểu)
-  - semantic_score() : cosine similarity giữa gold_answer và chunk content
-"""
-
 from __future__ import annotations
 
 import re
@@ -179,16 +170,11 @@ def main() -> None:
 
         for rank, r in enumerate(results, 1):
             content = r.get("content", "")
-            score   = r.get("score",   0.0)
             source  = r.get("metadata", {}).get("source", "?")
-
             sim    = semantic_score(gold, content)
-
             sem_scores.append(sim)
-
             sem_mark = "✓" if sim >= SIMILARITY_THRESHOLD else "✗"
             preview  = content[:100].replace("\n", " ")
-
             print(f"similarity={sim:.4f} {sem_mark}  src={source}")
             print(f"        {preview}...")
 

@@ -154,6 +154,5 @@ class ChunkingStrategyComparator:
             "min_chunk_length": min(lengths),
             "max_chunk_length": max(lengths),
             "std_chunk_length": round(variance ** 0.5, 1),
-            "total_chars": sum(lengths),
-            "chunks": chunks,
+            "total_chars": sum(lengths)
         }

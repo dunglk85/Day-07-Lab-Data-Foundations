@@ -73,9 +73,9 @@ Chạy `ChunkingStrategyComparator().compare()` trên 2-3 tài liệu:
 
 | Tài liệu | Strategy | Chunk Count | Avg Length | Preserves Context? |
 |-----------|----------|-------------|------------|-------------------|
-| data/phapluat/01_pháp_luật.md | FixedSizeChunker (`fixed_size`) | | | |
-| | SentenceChunker (`by_sentences`) | | | |
-| | RecursiveChunker (`recursive`) | | | |
+| data/phapluat/01_pháp_luật.md | FixedSizeChunker (`fixed_size`) | 41|298.8 | |
+| | SentenceChunker (`by_sentences`) | 21| 485.6| |
+| | RecursiveChunker (`recursive`) |98| 102.6| |
 
 ### Strategy Của Tôi
 
@@ -96,7 +96,7 @@ Chạy `ChunkingStrategyComparator().compare()` trên 2-3 tài liệu:
 
 | Tài liệu | Strategy | Chunk Count | Avg Length | Retrieval Quality? |
 |-----------|----------|-------------|------------|--------------------|
-| | best baseline | | | |
+| | best baseline | | 298.8| |
 | | **của tôi** | | | |
 
 ### So Sánh Với Thành Viên Khác

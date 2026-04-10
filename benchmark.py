@@ -3,7 +3,7 @@ from __future__ import annotations
 from pathlib import Path
 import os
 
-from src.chunking import compute_similarity
+from src.chunking import ChunkingStrategyComparator, compute_similarity
 from src.chunking import FixedSizeChunker, SentenceChunker, RecursiveChunker
 from src.store import EmbeddingStore
 from src.models import Document
@@ -17,7 +17,7 @@ load_dotenv()
 # ------------------------------------------------------------------ #
 
 YOUR_NAME         = "your_name"
-CHUNKING_STRATEGY = "fixed"   # "fixed" | "sentence" | "recursive"
+CHUNKING_STRATEGY = "sentence"   # "recursive" | "sentence" | "recursive"
 CHUNK_SIZE        = 300
 OVERLAP           = 50
 MAX_SENTENCES     = 3
@@ -99,6 +99,10 @@ def load_documents(data_dir: Path) -> list[Document]:
             metadata={"source": path.name, "path": str(path)},
         ))
     print(f"[load] {len(docs)} tài liệu từ {data_dir}")
+    for doc in docs:
+        compare = ChunkingStrategyComparator().compare(doc.content, chunk_size=CHUNK_SIZE)
+        print(f"  - {doc.id}: {doc.metadata['source']}")
+        print(compare)
     return docs
 
 

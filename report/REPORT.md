@@ -220,11 +220,11 @@ Chạy 5 benchmark queries của nhóm trên implementation cá nhân của bạ
 | Tiêu chí | Loại | Điểm tự đánh giá |
 |----------|------|-------------------|
 | Warm-up | Cá nhân | 5 / 5 |
-   219	| Document selection | Nhóm | 9 / 10 |
-   220	| Chunking strategy | Nhóm | 12 / 15 |
-   221	| My approach | Cá nhân | 9 / 10 |
-   222	| Similarity predictions | Cá nhân | 4 / 5 |
-   223	| Results | Cá nhân | 7 / 10 |
-   224	| Core implementation (tests) | Cá nhân | 29 / 30 |
-   225	| Demo | Nhóm | 4 / 5 |
-   226	| **Tổng** | | **79 / 100** |
+| Document selection | Nhóm | 9 / 10 |
+| Chunking strategy | Nhóm | 12 / 15 |
+| My approach | Cá nhân | 9 / 10 |
+| Similarity predictions | Cá nhân | 4 / 5 |
+| Results | Cá nhân | 7 / 10 |
+| Core implementation (tests) | Cá nhân | 29 / 30 |
+| Demo | Nhóm | 4 / 5 |
+| **Tổng** | | **79 / 100** |

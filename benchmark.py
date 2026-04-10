@@ -28,14 +28,14 @@ load_dotenv()
 # ------------------------------------------------------------------ #
 
 YOUR_NAME         = "your_name"
-CHUNKING_STRATEGY = "recursive"   # "fixed" | "sentence" | "recursive"
+CHUNKING_STRATEGY = "fixed"   # "fixed" | "sentence" | "recursive"
 CHUNK_SIZE        = 300
 OVERLAP           = 50
 MAX_SENTENCES     = 3
 DATA_DIR          = Path("data/phapluat/")
 
 # Ngưỡng để coi một chunk là "semantically relevant"
-SIMILARITY_THRESHOLD = 0.3
+SIMILARITY_THRESHOLD = 0.4
 
 BENCHMARK = [
     {
@@ -87,7 +87,6 @@ BENCHMARK = [
 def semantic_score(gold_answer: str, chunk_content: str) -> float:
     """
     Tính cosine similarity giữa gold_answer và chunk_content
-    bằng bag-of-words + compute_similarity từ chunking.py.
     """
     embedder = OpenAIEmbedder(model_name=os.getenv("OPENAI_EMBEDDING_MODEL", OPENAI_EMBEDDING_MODEL))
     

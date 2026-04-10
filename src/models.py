@@ -15,3 +15,4 @@ class Document:
     id: str
     content: str
     metadata: dict = field(default_factory=dict)
+    source: str = ""  # Optional source field for convenience

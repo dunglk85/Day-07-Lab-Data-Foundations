@@ -46,7 +46,7 @@ class EmbeddingStore:
             "embedding": embedding,
             "metadata": {
                 "doc_id": doc.id,
-                "source": doc.source,
+                "source": doc.metadata.get("source", ""),
             },
         }
         self._next_index += 1

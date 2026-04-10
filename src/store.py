@@ -114,12 +114,3 @@ class EmbeddingStore:
         initial_size = len(self._store)
         self._store = [record for record in self._store if record["metadata"]["doc_id"] != doc_id]
         return len(self._store) < initial_size
-    
-    def retrieve(self, query: str, top_k: int = 3) -> list[str]:
-        """
-        Convenience method to return just the content of top-k relevant chunks.
-
-        Uses the main search method under the hood.
-        """
-        results = self.search(query, top_k)
-        return [record["document"] for record in results]

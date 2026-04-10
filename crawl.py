@@ -34,10 +34,9 @@ REQUEST_DELAY = 1.5                                        # giây giữa các r
 # Danh sách URL cụ thể (ưu tiên dùng nếu có)
 # Để rỗng [] để tự động search qua DuckDuckGo
 SEED_URLS: list[str] = [
-    # Ví dụ:
-    #"https://www.pinecone.io/learn/retrieval-augmented-generation/",
-    #"https://docs.llamaindex.ai/en/stable/getting_started/concepts/",
-    "https://vnexpress.net/phap-luat"
+    "https://vnexpress.net/phap-luat",
+    "https://vietnamnet.vn/phap-luat",
+    "https://tuoitre.vn/phap-luat.htm"
 ]
 
 # ------------------------------------------------------------------ #

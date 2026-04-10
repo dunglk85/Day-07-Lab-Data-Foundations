@@ -1,22 +1,27 @@
 ---
 title: "Pháp luật"
 source: "https://vnexpress.net/phap-luat"
-topic: "vector database retrieval augmented generation"
 ---
 
 # Pháp luật
 
 > Source: https://vnexpress.net/phap-luat
 
-### Giám đốc Công ty Mua bán nợ Nhất Tín bị bắt vì 'khủng bố' để đòi 70 tỷ đồng
+### Bà Nguyễn Thị Như Loan bị phạt 18 tháng tù treo
 
-TP HCM Lợi dụng danh nghĩa hợp đồng mua bán nợ, Hồ Minh Đạt cùng vợ và nhóm nhân viên đã "khủng bố tinh thần", đập phá tài sản nhằm cưỡng đoạt 70 tỷ đồng.
+TP HCM Tòa áp dụng nhiều tình tiết giảm nhẹ cùng Nghị quyết 68, tuyên bà Nguyễn Thị Như Loan, cựu CEO Quốc Cường Gia Lai, 18 tháng tù nhưng được hưởng án treo.
 
-### Bà Nguyễn Thị Như Loan xin án cải tạo, nói cần tiếp tục điều hành doanh nghiệp
+2h trước
 
 ### Đề xuất mới trong trại tạm giam: Điện thoại được trả lại, không tiêu hủy
 
+### Ba người Hàn Quốc trốn truy nã đỏ của Interpol bị bắt tại Nha Trang
+
+### Cảnh sát Mỹ lãnh án tù vì ném thùng đá chặn nghi phạm
+
 ### Bị bạo hành, người đàn bà sát hại chồng
+
+Đồng ThápPhạm Thị Triền, 56 tuổi, bị chồng uống rượu say bạo hành nên đợi ông này ngủ, dùng tuýp sắt đánh vào đầu, sau đó uống thuốc tự tử nhưng không chết.
 
 ### Bịt mặt, cầm dao xông vào nhà đối thủ chém tới tấp
 
@@ -25,6 +30,14 @@ TP HCMDo mâu thuẫn ngoài xã hội, Hoàng Văn Thủy đeo khẩu trang và
 ### Cựu phó chủ tịch TP Phúc Yên liên quan vụ 'tội phạm núp bóng doanh nghiệp'
 
 Phú ThọÔng Hoàng Trọng Lợi, nguyên phó chủ tịch UBND thành phố Phúc Yên (cũ), bị bắt với cáo buộc có sai phạm trong vụ án tội phạm xã hội đen 'núp bóng' doanh nghiệp.
+
+### Giám đốc Công ty Mua bán nợ Nhất Tín bị bắt vì 'khủng bố' để đòi 70 tỷ đồng
+
+TP HCMLợi dụng danh nghĩa hợp đồng mua bán nợ, Hồ Minh Đạt cùng vợ và nhóm nhân viên đã "khủng bố tinh thần", đập phá tài sản nhằm cưỡng đoạt 70 tỷ đồng.
+
+### Bà Nguyễn Thị Như Loan xin án cải tạo, nói cần tiếp tục điều hành doanh nghiệp
+
+TP HCMNói lời sau cùng tại tòa, bà Nguyễn Thị Như Loan thừa nhận sai, xin được hưởng án cải tạo không giam giữ để tiếp tục điều hành doanh nghiệp, hoàn thành các dự án dang dở.
 
 ### Người phụ nữ trốn thoát sau 2 năm bị em dâu nhốt dưới hầm
 
@@ -38,6 +51,10 @@ MỹNạn nhân khuyết tật 58 tuổi nói bị em dâu nhốt trong tầng h
 
 Đăk LăkVõ Quốc Toại bị phạt 18 tháng tù do đưa 4 ngư dân sang vùng biển Philippines khai thác cá ngừ đại dương trái phép, bị lực lượng chức năng nước này bắt giữ.
 
+### Kẻ giết người giả danh nạn nhân nhắn tin với gia đình
+
+Trung QuốcSau khi sát hại bà Cao vì đòi quan hệ tình dục không thành, Triệu giấu xác rồi lấy điện thoại của nạn nhân để mạo danh trò chuyện với gia đình, tạo cảm giác vẫn còn sống.
+
 ### Kẻ trộm kiện ngược nhân viên siêu thị vì bị đuổi đánh
 
 MỹĐi ăn trộm hàng ở siêu thị nhưng bị nhân viên đuổi theo chặn đánh, Joshua Merkel đệ đơn kiện đòi bồi thường thiệt hại tinh thần và thể chất.
@@ -50,9 +67,9 @@ Hà NộiTrong 6 tháng, ngành thi hành án dân sự đã thi hành xong hơn
 
 Tôi và hàng xóm cũ thân thiết nên họ cho tôi mở cửa sổ sang đất bên đó cho thoáng, nhưng gia chủ vừa bán đất cho người khác, và hàng xóm mới lại bắt tôi bịt.
 
-### Hành vi lạ khiến kẻ giết người đóng giả nạn nhân bị phát hiện
+### Khởi tố vụ án xe tải tuột dốc làm 3 người chết
 
-Trung QuốcSau khi sát hại bà Cao vì đòi quan hệ tình dục không thành, Triệu giấu xác rồi lấy điện thoại của nạn nhân để mạo danh trò chuyện với gia đình.
+Lâm ĐồngCảnh sát xác định tài xế không thực hiện các biện pháp đảm bảo an toàn khi đậu xe tải trên triền núi Tà Zôn, gây ra vụ tai nạn thương tâm.
 
 ![
 
@@ -177,22 +194,6 @@ TP HCMCựu lãnh đạo Tập đoàn Cao su Việt Nam khai từng trả lại 
 ### Hãm hại cháu gái của bạn sau cuộc nhậu
 
 An GiangTàn cuộc nhậu ở nhà bạn, Văng Văn Hậu, không về mà tìm cớ nghỉ lại, nhân lúc người lớn đều đi vắng đã hãm hại cháu bé 6 tuổi.
-
-### Cựu thứ trưởng nông nghiệp lĩnh 4 năm tù do nhận hối lộ 4,5 tỷ đồng
-
-Hà NộiVới số tiền nhận hối lộ 4-13 tỷ đồng, cựu thứ trưởng Hoàng Văn Thắng cùng 4 người thuộc Bộ Nông nghiệp và phát triển nông thôn bị tòa tuyên 3 năm 6 tháng đến 13 năm tù.
-
-### Kẻ xâm hại nữ sinh 14 tuổi suốt ba năm bị bắt
-
-Đồng ThápNguyễn Văn Hòa, 45 tuổi, bị cáo buộc xâm hại nữ sinh 14 tuổi suốt 3 năm, cho đến khi giáo viên chủ nhiệm phát hiện dấu hiệu bất thường của nạn nhân.
-
-### Trung Quốc siết luật để giải bài toán 'đất nghĩa trang đắt gấp 10 đất ở'
-
-Khi đất nghĩa trang nhiều nơi có giá tới 3 tỷ đồng/m2, nhiều người Trung Quốc lâm cảnh sống không đủ tiền mua nhà, chết không đủ tiền mua chỗ chôn.
-
-### Nam sinh tử vong khi được 'khám từ xa', gia đình kiện bệnh viện
-
-MỹGia đình đệ đơn kiện bệnh viện vì để sinh viên Conor Hylton nằm 4 giờ trong phòng hồi sức tích cực mà không có bác sĩ thăm khám trực tiếp.
 
 1 2 3 4
 
